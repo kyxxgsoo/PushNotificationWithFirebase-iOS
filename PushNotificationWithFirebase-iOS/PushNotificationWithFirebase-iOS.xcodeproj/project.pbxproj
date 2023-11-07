@@ -16,6 +16,7 @@
 		F3BB15CE2AFAB94400DE7DC2 /* PushNotificationWithFirebase_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB15CD2AFAB94400DE7DC2 /* PushNotificationWithFirebase_iOSUITestsLaunchTests.swift */; };
 		F3BB15DC2AFAB9AB00DE7DC2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F3BB15DB2AFAB9AB00DE7DC2 /* FirebaseAnalytics */; };
 		F3BB15DE2AFABA3300DE7DC2 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = F3BB15DD2AFABA3300DE7DC2 /* FirebaseMessaging */; };
+		F3BB15E02AFABCF500DE7DC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3BB15DF2AFABCF500DE7DC2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,9 @@
 		F3BB15C72AFAB94400DE7DC2 /* PushNotificationWithFirebase-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PushNotificationWithFirebase-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3BB15CB2AFAB94400DE7DC2 /* PushNotificationWithFirebase_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationWithFirebase_iOSUITests.swift; sourceTree = "<group>"; };
 		F3BB15CD2AFAB94400DE7DC2 /* PushNotificationWithFirebase_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationWithFirebase_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F3BB15DF2AFABCF500DE7DC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F3BB15E12AFABD9700DE7DC2 /* PushNotificationWithFirebase-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PushNotificationWithFirebase-iOS.entitlements"; sourceTree = "<group>"; };
+		F3BB15E22AFABD9F00DE7DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,9 @@
 		F3BB15AF2AFAB94300DE7DC2 /* PushNotificationWithFirebase-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				F3BB15E22AFABD9F00DE7DC2 /* Info.plist */,
+				F3BB15E12AFABD9700DE7DC2 /* PushNotificationWithFirebase-iOS.entitlements */,
+				F3BB15DF2AFABCF500DE7DC2 /* GoogleService-Info.plist */,
 				F3BB15B02AFAB94300DE7DC2 /* PushNotificationWithFirebase_iOSApp.swift */,
 				F3BB15B22AFAB94300DE7DC2 /* ContentView.swift */,
 				F3BB15B42AFAB94400DE7DC2 /* Assets.xcassets */,
@@ -243,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3BB15B82AFAB94400DE7DC2 /* Preview Assets.xcassets in Resources */,
+				F3BB15E02AFABCF500DE7DC2 /* GoogleService-Info.plist in Resources */,
 				F3BB15B52AFAB94400DE7DC2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,11 +438,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PushNotificationWithFirebase-iOS/PushNotificationWithFirebase-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PushNotificationWithFirebase-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = G64N5NJ4Q6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PushNotificationWithFirebase-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,11 +469,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PushNotificationWithFirebase-iOS/PushNotificationWithFirebase-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PushNotificationWithFirebase-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = G64N5NJ4Q6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PushNotificationWithFirebase-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
